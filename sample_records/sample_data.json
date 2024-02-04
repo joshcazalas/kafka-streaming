@@ -1,0 +1,257 @@
+{
+	"arrests": [
+		{
+			"id" : 26711916,
+			"officer_id" : 242400,
+			"arrest_date" : "2018-07-26",
+			"arrest_time" : "23:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 26781447,
+			"officer_id" : 242400,
+			"arrest_date" : "2018-08-25",
+			"arrest_time" : "04:00:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Hispanic",
+			"crime_type_id" : 140
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 26711916,
+			"officer_id" : 242400,
+			"arrest_date" : "2018-07-26",
+			"arrest_time" : "23:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 26781447,
+			"officer_id" : 242400,
+			"arrest_date" : "2018-08-25",
+			"arrest_time" : "04:00:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Hispanic",
+			"crime_type_id" : 140
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		}
+	],
+	"officer": [
+		{
+			"id" : 242400,
+			"employment_start_date" : "2006-09-14",
+			"age" : "41 to 50",
+			"military_experience" : "",
+			"race_id" : 3,
+			"gender_id" : 2,
+			"rank_id" : 2
+		}
+	],
+	"complaints": [
+		{
+			"id" : 52,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2015-031",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2015-09-26",
+			"date_of_judgement" : "2015-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 102,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2015-031",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2015-09-26",
+			"date_of_judgement" : "2015-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 77,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2015-031",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2015-09-26",
+			"date_of_judgement" : "2015-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 27,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2018-026",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2018-09-26",
+			"date_of_judgement" : "2018-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 127,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2015-031",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2015-09-26",
+			"date_of_judgement" : "2015-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 52,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2015-031",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2015-09-26",
+			"date_of_judgement" : "2015-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 102,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2015-031",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2015-09-26",
+			"date_of_judgement" : "2015-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 77,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2015-031",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2015-09-26",
+			"date_of_judgement" : "2015-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 27,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2018-026",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2018-09-26",
+			"date_of_judgement" : "2018-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		},
+		{
+			"id" : 127,
+			"officer_id" : 242400,
+			"investigation_id" : "IC2015-031",
+			"complainant" : "QU",
+			"allegation_sustained" : "1",
+			"internal_or_external_origination" : "Internal",
+			"report_date" : "2015-09-26",
+			"date_of_judgement" : "2015-10-03",
+			"action_taken_id" : 3,
+			"days_suspended" : 0,
+			"final_ruling" : 1,
+			"reprimand_type" : "None",
+			"incident_type_id" : 1
+		}
+	]
+}

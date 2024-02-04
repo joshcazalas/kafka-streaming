@@ -28,7 +28,7 @@ connection = psycopg2.connect(host='localhost',
 connection.autocommit = True
 
 # Message with sample data from postgres instance
-with open('sample_records/arrests_202402041656.json', 'r') as file:
+with open('sample_records/sample_data.json', 'r') as file:
         json_data = json.load(file)
 
 table_names = list(json_data.keys())
@@ -38,7 +38,7 @@ print(json_data)
 # Serialize the JSON message
 serialized_message = json.dumps(json_data, default=date_encoder)
 
-# Produce the message to the Kafka topic
+# Publish the message to the Kafka topic
 producer.produce('arrest', key='sample_key', value=serialized_message)
 
 # Wait for any outstanding messages to be delivered and delivery reports received
