@@ -31,6 +31,9 @@ def consume_kafka_message(consumer, topics):
                         insert_into_table(connection, table_name, table_data)
                     end_time = time.time()  # Record end time
                     elapsed_time = end_time - start_time
+                    create_dimension(connection, 'arrest')
+                    create_dimension(connection, 'officer')
+                    print("Dimensions Updated.")
                     print(f"Processing time: {format_processing_time(elapsed_time)}")
             consumer.commit()
 
