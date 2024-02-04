@@ -1,11 +1,11 @@
 ### Kafka-Streaming
 -------------------
-This project uses python, bash, and Docker to create a POC for a real-time streaming solution with Apache Kafka
+This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a real-time streaming solution.
 
 ## Prerequisites
 -------------------
 1. Ubuntu 22.04 (or the latest LTS version)
-2. Docker Desktop with WSL integration enabled
+2. Docker Desktop with WSL integration enabled (more info (here)[https://docs.docker.com/desktop/wsl/])
 3. DBeaver Community (or other preferred DB tool)
 
 ## Setup
