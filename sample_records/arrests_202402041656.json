@@ -1,0 +1,903 @@
+{
+"arrests": [
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-11-04",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Asian_Pacific Islander",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-04-24",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26638227,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-06-29",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-04-24",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15962331,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-05-17",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26642385,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-02",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15962793,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-05-18",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26645619,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-06-30",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26647236,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-05",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26247606,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-01-30",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26248761,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-01-29",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-12-17",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26663406,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-12",
+		"arrest_time" : "10:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26663637,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-10",
+		"arrest_time" : "10:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-12-17",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-12-01",
+		"arrest_time" : "09:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-12-01",
+		"arrest_time" : "09:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-11-28",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-11-28",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26251533,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-01",
+		"arrest_time" : "08:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26251764,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-01-30",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26671953,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-18",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26677728,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-14",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15966720,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-05-28",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 9
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-29",
+		"arrest_time" : "08:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-10-28",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-10-28",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-11-16",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-22",
+		"arrest_time" : "12:55:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-07",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Asian_Pacific Islander",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-12-22",
+		"arrest_time" : "12:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26264469,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-09",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15969261,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-06-03",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26265855,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-10",
+		"arrest_time" : "08:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26266317,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-08",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Asian_Pacific Islander",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-10",
+		"arrest_time" : "11:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-06-01",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-05-30",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-05-09",
+		"arrest_time" : "08:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26755113,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-16",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26755575,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-10",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26755806,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-17",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26756037,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-17",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-11-08",
+		"arrest_time" : "14:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26756961,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-11",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-07-14",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-07-14",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15977577,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-06",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26281332,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-16",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26281794,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-15",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26282025,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-14",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26762043,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-16",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 121
+	},
+	{
+		"id" : 26762274,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-18",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 121
+	},
+	{
+		"id" : 26282256,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-14",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26282718,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-10",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15978270,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-05",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Asian_Pacific Islander",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15978501,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-05",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Asian_Pacific Islander",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15979656,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-10",
+		"arrest_time" : "11:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26765970,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-16",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26767587,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-18",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 15979887,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-07-10",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-05-18",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-05-18",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26773593,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-14",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 121
+	},
+	{
+		"id" : 26774286,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-20",
+		"arrest_time" : "11:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26775441,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-09-22",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 82
+	},
+	{
+		"id" : 26776827,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-22",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26777058,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-23",
+		"arrest_time" : "12:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-03-05",
+		"arrest_time" : "20:12:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26289879,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-18",
+		"arrest_time" : "09:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26789994,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-22",
+		"arrest_time" : "12:55:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26790225,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-22",
+		"arrest_time" : "15:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26795538,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-24",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26795769,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-30",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26796000,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-30",
+		"arrest_time" : "14:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-04-16",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Asian_Pacific Islander",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-04-16",
+		"arrest_time" : "10:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Asian_Pacific Islander",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26799465,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-25",
+		"arrest_time" : "14:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26296578,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-14",
+		"arrest_time" : "12:02:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26806164,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-26",
+		"arrest_time" : "12:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26806395,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-09-01",
+		"arrest_time" : "08:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 121
+	},
+	{
+		"id" : 26300043,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-01-25",
+		"arrest_time" : "18:01:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26300274,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-01-24",
+		"arrest_time" : "18:01:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-03-04",
+		"arrest_time" : "16:40:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26302353,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-19",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26302584,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-22",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26302815,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-02-15",
+		"arrest_time" : "14:30:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2018,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-09-10",
+		"arrest_time" : "08:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-03-04",
+		"arrest_time" : "16:40:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-03-04",
+		"arrest_time" : "13:50:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-03-04",
+		"arrest_time" : "13:50:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-02-22",
+		"arrest_time" : "19:43:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-02-22",
+		"arrest_time" : "19:43:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Hispanic",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-02-19",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-02-19",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-01-25",
+		"arrest_time" : "18:01:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 2017,
+		"officer_id" : 223210,
+		"arrest_date" : "2017-01-25",
+		"arrest_time" : "18:01:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26816097,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-08-29",
+		"arrest_time" : "08:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "Black",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26816559,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-09-04",
+		"arrest_time" : "12:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	},
+	{
+		"id" : 26816790,
+		"officer_id" : 223210,
+		"arrest_date" : "2018-09-07",
+		"arrest_time" : "13:00:00",
+		"arrest_type_id" : 1,
+		"subject_race" : "White",
+		"crime_type_id" : 32
+	}
+]}

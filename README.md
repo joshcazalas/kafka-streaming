@@ -10,9 +10,22 @@ This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a r
 
 ## Setup
 -------------------
+1. Navigate to the scripts directory: `cd scripts/`
+
+This directory contains shell scripts which will assist with installing all of the required dependencies for this project.
+
 1. Run `kafka_install.sh` with the following command: `./kafka_install.sh`
-This will pull the Docker image, start a container using the image, install Apache Kafka, install the required Python libraries, and start zookeeper, a requirement for running Kafka. After this script is complete, leave the current tab open in Ubuntu to allow Zookeeper to run in the background and open a new Ubuntu tab to continue.
+
+This will pull the Docker image, start a container using the image, install Apache Kafka, install the required Python libraries, and start zookeeper, a requirement for running Kafka. After this script is complete, leave the current tab open in Ubuntu to allow Zookeeper to run in the background. Open a new Ubuntu tab and navigate back to the scripts directory to continue.
+
 2. Run `start_kafka_server.sh` with the following command: `./start_kafka_server.sh`
-This will open the directory that Kafka was installed in and start a locally hosted Kafka server. After the script is complete, leave the current open as well to allow the Kafka server to run in the background. Open a new Ubuntu tab to continue.
+
+This will open the directory that Kafka was installed in and start a locally hosted Kafka server. After the script is complete, leave the current open as well to allow the Kafka server to run in the background. Open a new Ubuntu tab and navigate back to the scripts directory to continue.
+
 3. Run `create_kafka_topic.sh` with the following command: `./create_kafka_topic.sh`
+
 This will create a Kafka topic called `arrest` which will be used in the following steps for real time data streaming.
+
+## Errors
+----------------------
+If the error `bash: ./file_name.sh: Permission denied` is encountered, run `chmod +x file_name.sh` to grant execute permission on the file.

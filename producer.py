@@ -1,6 +1,5 @@
 from confluent_kafka import Producer
-from generate_json_data import generate_random_json_data
-from postgres import create_kafka_staging_area
+from helper_functions.postgres_functions import create_kafka_staging_area
 from datetime import date
 import psycopg2
 import socket
@@ -29,9 +28,11 @@ connection = psycopg2.connect(host='localhost',
 connection.autocommit = True
 
 # Message with sample data from postgres instance
-json_data = generate_random_json_data(connection, 'public')
+with open('sample_records/arrests_202402041656.json', 'r') as file:
+        json_data = json.load(file)
+
 table_names = list(json_data.keys())
-# create_kafka_staging_area(connection, table_names,'public', 'kafka')
+create_kafka_staging_area(connection, table_names,'public', 'kafka')
 print(json_data)
 
 # Serialize the JSON message

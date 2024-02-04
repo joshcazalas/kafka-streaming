@@ -1,5 +1,11 @@
 import psycopg2
 
+def copy_fact_tables(connection, source_schema, target_schema):
+    cursor = connection.cursor()
+    fact_tables = ['arrest_type','complaint_action','crime_type','gender','incident_type','race','rank']
+    for table in fact_tables:
+        cursor.execute(f"create table {target_schema}.{table} as select * from {source_schema}.{table};")
+
 def reset_kafka_staging_area(connection, schema):
     cursor = connection.cursor()
     cursor.execute(f"drop schema if exists {schema} cascade;")
@@ -23,7 +29,9 @@ def create_kafka_staging_area(connection, tables, source_schema, target_schema):
 
         print("Creating Kafka staging area...")
         create_schema_and_tables(connection, tables, source_schema, target_schema)
+        copy_fact_tables(connection, source_schema, target_schema)
         print('Kafka staging area successfully created.')
+
 
     except psycopg2.Error as e:
         print(f"Error: {e}")
