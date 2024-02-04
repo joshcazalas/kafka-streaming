@@ -1,0 +1,9 @@
+site-docs
+logs
+licenses
+libs
+config
+bin
+LICENSE
+NOTICE
+__pycache__
