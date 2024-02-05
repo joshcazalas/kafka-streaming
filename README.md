@@ -40,5 +40,5 @@ If the error `bash: ./file_name.sh: Permission denied` is encountered, run `chmo
 
 ## Alternate Methods
 ----------------------
-For an alternate method to this POC that takes advantage of cloud services, see these AWS [Docs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html)
-Pairing a fleshed out version of this POC with Terraform would create the most seamless version of this product.
+For an alternate method to this POC that takes advantage of cloud services, see these AWS [Docs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html).
+Pairing a fleshed out version of this POC provided by AWS with Terraform for automating the deployments would create a more robust, time-efficient, and scalable version of this repository.
