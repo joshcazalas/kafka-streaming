@@ -21,7 +21,7 @@ The sample_records directory contains a json file with sample records for multip
 ## Prerequisites
 -------------------
 1. Ubuntu 22.04 (or the latest LTS version) [link](https://releases.ubuntu.com/jammy/)
-2. Docker Desktop with WSL integration enabled. [link](https://www.docker.com/products/docker-desktop/). WSL info [here](https://docs.docker.com/desktop/wsl/).
+2. Docker Desktop with WSL integration enabled [link](https://www.docker.com/products/docker-desktop/). WSL info [here](https://docs.docker.com/desktop/wsl/).
 3. DBeaver Community (or other preferred DB tool) [link](https://dbeaver.io/download/)
 
 ## Setup
