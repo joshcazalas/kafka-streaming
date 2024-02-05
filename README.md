@@ -42,11 +42,11 @@ The `sample_records` directory contains a json file with sample records for mult
 -------------------
 1. Run `kafka_setup.sh` with the following command: `./kafka_setup.sh`
 
-This will pull the Docker image, start a container using the image, install Apache Kafka, install the required Python libraries, start zookeeper, a requirement for running Kafka, start a Kafka server, create a Kafka topic, start the flask app containing the API, and start the consumer.
+    This will pull the Docker image, start a container using the image, install Apache Kafka, install the required Python libraries, start zookeeper, a requirement for running Kafka, start a Kafka server, create a Kafka topic, start the flask app containing the API, and start the consumer.
 
 2. Run one of the following three files: `python3 create.py` , `python3 delete.py` , `python3 update.py`
 
-`create.py` will load the records found in `sample_records/sample_data.json` into the postgres instance, `delete.py` will delete records of a given arrest_id from the postgres database, and `update.py` will update all arrest records from `sample_records/sample_data.json` with slightly altered records found in `sample_records/sample_data_edited.json`
+    `create.py` will load the records found in `sample_records/sample_data.json` into the postgres instance, `delete.py` will delete records of a given arrest_id from the postgres database, and `update.py` will update all arrest records from `sample_records/sample_data.json` with slightly altered records found in `sample_records/sample_data_edited.json`
 
 3. After loading data into the instance, run `python3 get_total_arrests.py`, `python3 get_complaints_by_officer.py`, or `python3 get_arrests_by_crime_type.py` to view aggregated metrics.
 
