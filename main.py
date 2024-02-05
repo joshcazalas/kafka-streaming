@@ -1,4 +1,3 @@
-import subprocess
 import psycopg2
 from kafka import KafkaConsumer
 from consumer import consume_kafka_message
@@ -21,4 +20,4 @@ consumer = KafkaConsumer(bootstrap_servers='localhost:9092',
 create_kafka_staging_area(connection, ['arrests','complaints','officer'], 'public', 'kafka')
 
 # Start Kafka consumer
-consume_kafka_message(consumer, connection,['arrest'])
+consume_kafka_message(consumer, connection,['arrest-topic'])

@@ -1,0 +1,94 @@
+{
+	"arrests": [
+		{
+			"id" : 26711916,
+			"officer_id" : 242400,
+			"arrest_date" : "2018-07-26",
+			"arrest_time" : "23:58:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 26781447,
+			"officer_id" : 242400,
+			"arrest_date" : "2018-08-25",
+			"arrest_time" : "03:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Hispanic",
+			"crime_type_id" : 140
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:58:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:58:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:58:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 26711916,
+			"officer_id" : 242400,
+			"arrest_date" : "2018-07-26",
+			"arrest_time" : "23:58:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 26781447,
+			"officer_id" : 242400,
+			"arrest_date" : "2018-08-25",
+			"arrest_time" : "03:59:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Hispanic",
+			"crime_type_id" : 140
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:58:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:58:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		},
+		{
+			"id" : 2016,
+			"officer_id" : 242400,
+			"arrest_date" : "2016-07-26",
+			"arrest_time" : "23:58:00",
+			"arrest_type_id" : 1,
+			"subject_race" : "Black",
+			"crime_type_id" : 46
+		}
+	]
+}

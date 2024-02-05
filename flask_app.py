@@ -40,6 +40,19 @@ def delete_arrest():
 
     return jsonify({"message": f"Arrest event scheduled for deletion"}), 200
 
+@app.route('/arrests/update', methods=['PUT'])
+def update_arrest():
+    data = request.json['arrests']
+
+    topic = 'arrest-topic'
+    for arrest_event in data:
+        arrest_event['event_type'] = 'update'
+        arrest_event['table_name'] = 'arrests'
+        producer.produce(topic, key=str(arrest_event['id']), value=json.dumps(arrest_event))
+        producer.flush()
+
+    return jsonify({"message": f"Arrest event scheduled for update"}), 200
+
 
 @app.route('/officers', methods=['POST'])
 def create_officer():

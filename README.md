@@ -30,10 +30,15 @@ The sample_records directory contains a json file with sample records for multip
 
 This will pull the Docker image, start a container using the image, install Apache Kafka, install the required Python libraries, start zookeeper, a requirement for running Kafka, start a Kafka server, create a Kafka topic, start the flask app containing the API, and start the consumer.
 
-2. Run `producer.py` with the following command: `python3 producer.py`
+2. Run one of the following three files: `python3 create.py` , `python3 delete.py` , `python3 update.py`
 
-This publish the sample data found in `sample_records.sample_data.json` to the Kafka topic using the flask app. The consumer will then load the data into the postgres instance.
+create.py will load the records found in sample_records/sample_data.json into the postgres instance, delete.py will delete records of a given arrest_id from the postgres database, and update.py will update all arrest records from sample_records/sample_data.json with slightly altered records found in sample_records/sample_data_edited.json
 
 ## Errors
 ----------------------
 If the error `bash: ./file_name.sh: Permission denied` is encountered, run `chmod +x file_name.sh` to grant execute permission on the file.
+
+## Alternate Methods
+----------------------
+For an alternate method to this POC that takes advantage of cloud services, see these AWS [Docs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html)
+Pairing a fleshed out version of this POC with Terraform would create the most seamless version of this product.

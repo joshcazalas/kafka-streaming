@@ -1,6 +1,6 @@
 import psycopg2
 
-def insert_into_table(connection, data):
+def delete_from_table(connection, data):
     cursor = connection.cursor()
 
     # Extract table_name from data

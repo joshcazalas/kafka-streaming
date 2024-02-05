@@ -1,6 +1,6 @@
 import psycopg2
 
-def insert_into_table(connection, data):
+def update_record(connection, data):
     cursor = connection.cursor()
 
     # Extract table_name from data
@@ -15,13 +15,14 @@ def insert_into_table(connection, data):
     del data['event_type']
 
     # Prepare the SQL query
-    columns = ', '.join([f'"{column}"' if column.lower() == 'primary' else column for column in data.keys()])
-    values = ', '.join([f"NULL" if value is None else f"'{value}'" if isinstance(value, str) else str(value) for value in data.values()])
-    insert_query = f"insert into postgres.kafka.{table_name} ({columns}) values ({values});"
-    print(insert_query)
+    set_values = ', '.join([f'"{column}" = ' + (f"NULL" if value is None else f"'{value}'" if isinstance(value, str) else str(value)) for column, value in data.items()])
+    where_condition = f'id = {data["id"]}'
+
+    update_query = f"UPDATE postgres.kafka.{table_name} SET {set_values} WHERE {where_condition};"
+    print(update_query)
 
     try:
-        cursor.execute(insert_query)
+        cursor.execute(update_query)
         connection.commit()
     except psycopg2.Error as e:
         print(f"Error: {e}")
