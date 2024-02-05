@@ -1,7 +1,3 @@
-SELECT * FROM postgres.public.user_datastore_value limit 100;
-select * from postgres.public.user_organizational_unit limit 100;
-select * from postgres.public.tenant limit 100;
-
 -- Scenario 1 Bullet Point 1: Pull all users from public.user_datastore_value with the following values (alias users_distinct): 24-31-315: 5 Years, 24-31-315: 6 Months
 select distinct (user_id) as users_distinct from postgres.public.user_datastore_value where value in ('24-31-315: 5 Years','24-31-315: 6 Months');
 
