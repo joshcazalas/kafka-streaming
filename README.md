@@ -1,6 +1,22 @@
 ### Kafka-Streaming
 -------------------
-This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a real-time streaming solution.
+This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a real-time streaming solution. 
+
+## Overview
+------------------
+The project consists of a few different areas. 
+
+# Scripts
+The scripts directory contains shell scripts used to install dependencies. See the Setup section below for install steps.
+
+# Producer and Consumer
+The two main pieces are the python files producer.py and consumer.py. As their names suggest, producer publishes data to a Kafka topic, and consumer consumes data from a Kafka topic and pushes it to the postgres database. consumer.py is a consumer function which is controlled by main.py, which tells it the location of the Kafka server and the desired topic. Both of these .py files use the helper functions directory, which is full of other python helper functions.
+
+# SQL
+The sql directory contains a few relevant .sql files used by the producer and consumer, mainly for creating tables and inserting data when needed.
+
+# Sample Records
+The sample_records directory contains a json file with sample records for multiple tables. These sample records are what is published to the Kafka topic when producer.py is run.
 
 ## Prerequisites
 -------------------
@@ -25,6 +41,15 @@ This will open the directory that Kafka was installed in and start a locally hos
 3. Run `create_kafka_topic.sh` with the following command: `./create_kafka_topic.sh`
 
 This will create a Kafka topic called `arrest` which will be used in the following steps for real time data streaming.
+
+## Real-Time Data Streaming
+----------------------
+Once Kafka is set up, use the following steps to execute real-time streaming:
+
+1. In one tab, execute main.py and leave it running: `python3 main.py`
+main.py polls the Kafka topic for new records in an infinite loop, grabbing and processing records as they come.
+
+2. In another tab, execute producer.py to publish the data found in the sample_records directory to the Kafka topic. consumer.py
 
 ## Errors
 ----------------------
