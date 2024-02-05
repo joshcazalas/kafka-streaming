@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from confluent_kafka import Producer
 from helper_functions.get_arrests import get_arrests_count
+from helper_functions.arrests_by_crime_type import arrests_by_crime_type
+from helper_functions.complaints_by_officer import complaints_by_officer
 import json
 import socket
 import psycopg2
@@ -59,32 +61,28 @@ def update_arrest():
 @app.route('/officers', methods=['POST'])
 def create_officer():
     data = request.json['officer']
-    
-    # Include the table_name field
-    data['table_name'] = 'officer'
 
-    # Publish the officer data to Kafka
     topic = 'arrest-topic'
-    producer.produce(topic, key=str(data['id']), value=json.dumps(data))
-    producer.flush()
+    for officer_event in data:
+        officer_event['table_name'] = 'officer'
+        officer_event['event_type'] = 'create'
+        producer.produce(topic, key=str(officer_event['id']), value=json.dumps(officer_event))
+        producer.flush()
 
-    return jsonify({"message": "Officer data sent to Kafka topic successfully"}), 201
+    return jsonify({"message": "Officer create event sent to Kafka topic successfully"}), 201
 
 @app.route('/complaints', methods=['POST'])
 def create_complaint():
     data = request.json['complaints']
 
-    # Include the table_name field for each complaint event
-    for complaint_event in data:
-        complaint_event['table_name'] = 'complaint'
-
-    # Publish each complaint event to Kafka
     topic = 'arrest-topic'
-    for complaint_event in data:
-        producer.produce(topic, key=str(complaint_event['id']), value=json.dumps(complaint_event))
+    for complaints_event in data:
+        complaints_event['table_name'] = 'complaints'
+        complaints_event['event_type'] = 'create'
+        producer.produce(topic, key=str(complaints_event['id']), value=json.dumps(complaints_event))
         producer.flush()
 
-    return jsonify({"message": "Complaint events sent to Kafka topic successfully"}), 201
+    return jsonify({"message": "Complaints create event sent to Kafka topic successfully"}), 201
 
 @app.route('/aggregated_metrics/total_arrests', methods=['GET'])
 def get_total_arrests():
@@ -97,6 +95,30 @@ def get_total_arrests():
     connection.autocommit = True
     total_arrests = get_arrests_count(connection)
     return jsonify({"total_arrests": total_arrests})
+
+@app.route('/aggregated_metrics/arrests_by_crime_type', methods=['GET'])
+def get_arrests_by_crime_type():
+    connection = psycopg2.connect(host='localhost',
+        database='postgres',
+        user='postgres',
+        password='admin',
+        port='5520'
+    )
+    connection.autocommit = True
+    num_arrests_by_crime_type = arrests_by_crime_type(connection)
+    return jsonify({"arrests_by_crime_type": num_arrests_by_crime_type})
+
+@app.route('/aggregated_metrics/complaints_by_officer', methods=['GET'])
+def get_complaints_by_officer():
+    connection = psycopg2.connect(host='localhost',
+        database='postgres',
+        user='postgres',
+        password='admin',
+        port='5520'
+    )
+    connection.autocommit = True
+    num_complaints_by_officer = complaints_by_officer(connection)
+    return jsonify({"complaints_by_officer": num_complaints_by_officer})
 
 if __name__ == '__main__':
     app.run(debug=True)
