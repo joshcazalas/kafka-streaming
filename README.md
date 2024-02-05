@@ -4,19 +4,19 @@ This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a r
 
 ## Overview
 ------------------
-The project consists of a few different areas. 
+The project consists of a few different components:
 
 ### Flask App
-The file flask_app.py contains an API which can be used to publish events to the Kafka topic.
+The file `flask_app.py` contains an API which can be used to publish events to the Kafka topic.
 
 ### Producer and Consumer
-The two main pieces are the python files producer.py and consumer.py. As their names suggest, producer publishes data to a Kafka topic using the flask app, and consumer consumes data from a Kafka topic and pushes it to the postgres database. consumer.py is a consumer function which is controlled by main.py, which tells it the location of the Kafka server and the desired topic. Both of these .py files use the helper functions directory, which contains miscellaneous python helper functions.
+The three main pieces are the python files `create.py`, `delete.py`, and `update.py`. As their names suggest, `create.py` interacts with the flask app to create records in the postgres instance using sample data, `delete.py` deletes records from the postgres instance with a given arrest_id, and `update.py` updates records created by `create.py` with slightly altered sample data.
 
 ### SQL
-The sql directory contains a few relevant .sql files used by the producer and consumer, mainly for creating tables and inserting data when needed.
+The `sql` directory contains a few relevant .sql files used by the producer and consumer, mainly for creating tables and inserting data when needed.
 
 ### Sample Records
-The sample_records directory contains a json file with sample records for multiple tables. These sample records are what is published to the Kafka topic when producer.py is run.
+The `sample_records` directory contains a json file with sample records for multiple tables. These sample records are what is published to the Kafka topic when `create.py` is run.
 
 ## Prerequisites
 -------------------
@@ -32,7 +32,7 @@ This will pull the Docker image, start a container using the image, install Apac
 
 2. Run one of the following three files: `python3 create.py` , `python3 delete.py` , `python3 update.py`
 
-create.py will load the records found in sample_records/sample_data.json into the postgres instance, delete.py will delete records of a given arrest_id from the postgres database, and update.py will update all arrest records from sample_records/sample_data.json with slightly altered records found in sample_records/sample_data_edited.json
+`create.py` will load the records found in `sample_records/sample_data.json` into the postgres instance, `delete.py` will delete records of a given arrest_id from the postgres database, and `update.py` will update all arrest records from `sample_records/sample_data.json` with slightly altered records found in `sample_records/sample_data_edited.json`
 
 ## Errors
 ----------------------
