@@ -2,7 +2,6 @@ import time
 import json
 from helper_functions.process_json_and_insert import insert_into_table
 from helper_functions.create_dimension import create_dimension
-import psycopg2
 
 running = True
 
