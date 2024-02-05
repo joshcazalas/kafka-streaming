@@ -1,4 +1,4 @@
-### Kafka-Streaming
+# Kafka-Streaming
 -------------------
 This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a real-time streaming solution. 
 
@@ -6,16 +6,16 @@ This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a r
 ------------------
 The project consists of a few different areas. 
 
-# Flask App
+### Flask App
 The file flask_app.py contains an API which can be used to publish events to the Kafka topic.
 
-# Producer and Consumer
+### Producer and Consumer
 The two main pieces are the python files producer.py and consumer.py. As their names suggest, producer publishes data to a Kafka topic using the flask app, and consumer consumes data from a Kafka topic and pushes it to the postgres database. consumer.py is a consumer function which is controlled by main.py, which tells it the location of the Kafka server and the desired topic. Both of these .py files use the helper functions directory, which contains miscellaneous python helper functions.
 
-# SQL
+### SQL
 The sql directory contains a few relevant .sql files used by the producer and consumer, mainly for creating tables and inserting data when needed.
 
-# Sample Records
+### Sample Records
 The sample_records directory contains a json file with sample records for multiple tables. These sample records are what is published to the Kafka topic when producer.py is run.
 
 ## Prerequisites
