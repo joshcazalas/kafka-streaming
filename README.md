@@ -49,7 +49,7 @@ Once Kafka is set up, use the following steps to execute real-time streaming:
 1. In one tab, execute main.py and leave it running: `python3 main.py`
 main.py polls the Kafka topic for new records in an infinite loop, grabbing and processing records as they come.
 
-2. In another tab, execute producer.py to publish the data found in the sample_records directory to the Kafka topic. consumer.py
+2. In another tab, execute producer.py to publish the data found in the sample_records directory to the Kafka topic. The instance of consumer.py still running in the previous tab will automatically publish the records to postgres. Switch back to the consumer tab to see insert info and runtimes for each published message.
 
 ## Errors
 ----------------------
