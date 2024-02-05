@@ -24,7 +24,7 @@ select user_id, count(*) as rank from postgres.public.user_datastore_value group
 ) a where a.rank > 100 and a.rank < 135;
 
 -- Scenario 1 Bullet Point 5
-with cte as (
+with aggregation as (
     select * from (
 	select user_id, count(*) as rank from postgres.public.user_datastore_value group by user_id having count(*) > 1 and count(*) > 100 and count(*) < 135
 	) a
@@ -37,4 +37,4 @@ case
 	when max(rank) over() - rank < 15 then 'smooth'
 	else 'jump ahead'
 end
-from cte order by rank desc;
+from aggregation order by rank desc;
