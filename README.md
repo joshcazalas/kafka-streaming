@@ -2,6 +2,12 @@
 -------------------
 This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a real-time streaming solution. 
 
+## Prerequisites
+-------------------
+1. Ubuntu 22.04 (or the latest LTS version) [link](https://releases.ubuntu.com/jammy/)
+2. Docker Desktop with WSL integration enabled [link](https://www.docker.com/products/docker-desktop/). WSL info [here](https://docs.docker.com/desktop/wsl/).
+3. DBeaver Community (or other preferred DB tool) [link](https://dbeaver.io/download/)
+
 ## Overview
 ------------------
 The project consists of a few different components:
@@ -31,12 +37,6 @@ The `sql` directory contains a few relevant .sql files used by the producer and 
 
 ### Sample Records
 The `sample_records` directory contains a json file with sample records for multiple tables. These sample records are what is published to the Kafka topic when `create.py` is run.
-
-## Prerequisites
--------------------
-1. Ubuntu 22.04 (or the latest LTS version) [link](https://releases.ubuntu.com/jammy/)
-2. Docker Desktop with WSL integration enabled [link](https://www.docker.com/products/docker-desktop/). WSL info [here](https://docs.docker.com/desktop/wsl/).
-3. DBeaver Community (or other preferred DB tool) [link](https://dbeaver.io/download/)
 
 ## Setup
 -------------------
