@@ -17,12 +17,12 @@ rm -f kafka_2.13-3.6.1.tgz
 cd kafka_2.13-3.6.1
 nohup ./bin/zookeeper-server-start.sh config/zookeeper.properties &
 
-sleep 10
+sleep 15
 
 # Start Kafka server
 nohup ./bin/kafka-server-start.sh config/server.properties &
 
-sleep 10
+sleep 15
 
 # Delete Kafka topic if exists
 ./bin/kafka-topics.sh --delete --topic arrest-topic --bootstrap-server localhost:9092
