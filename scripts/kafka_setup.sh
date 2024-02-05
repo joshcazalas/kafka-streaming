@@ -17,4 +17,10 @@ rm -f kafka_2.13-3.6.1.tgz
 
 # Start zookeeper
 cd kafka_2.13-3.6.1
-./bin/zookeeper-server-start.sh config/zookeeper.properties
+nohup ./bin/zookeeper-server-start.sh config/zookeeper.properties &
+
+# Start Kafka server
+nohup ./bin/kafka-server-start.sh config/server.properties &
+
+# Create Kafka topic
+./bin/kafka-topics.sh --create --topic arrest --bootstrap-server localhost:9092

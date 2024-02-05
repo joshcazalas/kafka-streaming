@@ -7,4 +7,4 @@ bin
 LICENSE
 NOTICE
 __pycache__
-*.txt
+*.out

@@ -8,7 +8,7 @@ arrests.arrest_time,
 arrest_type.name as arrest_type,
 arrests.subject_race,
 crime_type.name as crime_type
-from postgres.public.arrests
+from postgres.kafka.arrests
 inner join postgres.kafka.arrest_type on arrests.arrest_type_id = arrest_type.id
 inner join postgres.kafka.crime_type on arrests.crime_type_id = crime_type.id
 inner join postgres.kafka.officer on arrests.officer_id = officer.id
