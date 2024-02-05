@@ -17,20 +17,21 @@ conf = {
 
 producer = Producer(conf)
 
+# Arrest event create
 @app.route('/arrests/create', methods=['POST'])
 def create_arrest():
     data = request.json['arrests']
 
-    # Publish each arrest event to Kafka with the table_name field
     topic = 'arrest-topic'
     for arrest_event in data:
-        arrest_event['table_name'] = 'arrests'  # Include the table_name field
+        arrest_event['table_name'] = 'arrests'
         arrest_event['event_type'] = 'create'
         producer.produce(topic, key=str(arrest_event['id']), value=json.dumps(arrest_event))
         producer.flush()
 
     return jsonify({"message": "Arrest create event sent to Kafka topic successfully"}), 201
 
+# Arrest event delete
 @app.route('/arrests/delete', methods=['DELETE'])
 def delete_arrest():
     data = request.json['arrests']
@@ -44,6 +45,7 @@ def delete_arrest():
 
     return jsonify({"message": f"Arrest event scheduled for deletion"}), 200
 
+# Arrest event update
 @app.route('/arrests/update', methods=['PUT'])
 def update_arrest():
     data = request.json['arrests']
@@ -57,7 +59,7 @@ def update_arrest():
 
     return jsonify({"message": f"Arrest event scheduled for update"}), 200
 
-
+# Officer event create
 @app.route('/officers', methods=['POST'])
 def create_officer():
     data = request.json['officer']
@@ -71,6 +73,7 @@ def create_officer():
 
     return jsonify({"message": "Officer create event sent to Kafka topic successfully"}), 201
 
+# Complaint event create
 @app.route('/complaints', methods=['POST'])
 def create_complaint():
     data = request.json['complaints']
@@ -84,6 +87,7 @@ def create_complaint():
 
     return jsonify({"message": "Complaints create event sent to Kafka topic successfully"}), 201
 
+# Total arrests aggregated metric GET
 @app.route('/aggregated_metrics/total_arrests', methods=['GET'])
 def get_total_arrests():
     connection = psycopg2.connect(host='localhost',
@@ -96,6 +100,7 @@ def get_total_arrests():
     total_arrests = get_arrests_count(connection)
     return jsonify({"total_arrests": total_arrests})
 
+# Arrests by crime type aggregated metric GET
 @app.route('/aggregated_metrics/arrests_by_crime_type', methods=['GET'])
 def get_arrests_by_crime_type():
     connection = psycopg2.connect(host='localhost',
@@ -108,6 +113,7 @@ def get_arrests_by_crime_type():
     num_arrests_by_crime_type = arrests_by_crime_type(connection)
     return jsonify({"arrests_by_crime_type": num_arrests_by_crime_type})
 
+# Complaints by officer aggregated metric GET
 @app.route('/aggregated_metrics/complaints_by_officer', methods=['GET'])
 def get_complaints_by_officer():
     connection = psycopg2.connect(host='localhost',

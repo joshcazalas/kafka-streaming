@@ -52,13 +52,16 @@ def consume_kafka_message(consumer, postgres_connection ,topics):
 
                     # Record end time
                     end_time = time.time()
+
                     # Calculate elapsed time
                     elapsed_time = end_time - start_time
+
                     # Recreate the officer and arrest dimensions
                     create_dimension(postgres_connection, 'arrest')
                     create_dimension(postgres_connection, 'officer')
                     print("Dimensions Updated.")
                     print(f"Processing time: {elapsed_time} seconds")
+                    
             consumer.commit()
 
     except KeyboardInterrupt:
