@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 from confluent_kafka import Producer
+from helper_functions.get_arrests import get_arrests_count
 import json
 import socket
+import psycopg2
 
 app = Flask(__name__)
 
@@ -83,6 +85,18 @@ def create_complaint():
         producer.flush()
 
     return jsonify({"message": "Complaint events sent to Kafka topic successfully"}), 201
+
+@app.route('/aggregated_metrics/total_arrests', methods=['GET'])
+def get_total_arrests():
+    connection = psycopg2.connect(host='localhost',
+        database='postgres',
+        user='postgres',
+        password='admin',
+        port='5520'
+    )
+    connection.autocommit = True
+    total_arrests = get_arrests_count(connection)
+    return jsonify({"total_arrests": total_arrests})
 
 if __name__ == '__main__':
     app.run(debug=True)
