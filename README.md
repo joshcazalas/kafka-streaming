@@ -48,6 +48,8 @@ This will pull the Docker image, start a container using the image, install Apac
 
 `create.py` will load the records found in `sample_records/sample_data.json` into the postgres instance, `delete.py` will delete records of a given arrest_id from the postgres database, and `update.py` will update all arrest records from `sample_records/sample_data.json` with slightly altered records found in `sample_records/sample_data_edited.json`
 
+3. After loading data into the instance, run `python3 get_total_arrests.py`, `python3 get_complaints_by_officer.py`, or `python3 get_arrests_by_crime_type.py` to view aggregated metrics.
+
 ## Errors
 ----------------------
 If the error `bash: ./file_name.sh: Permission denied` is encountered, run `chmod +x file_name.sh` to grant execute permission on the file.
