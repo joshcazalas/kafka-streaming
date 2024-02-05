@@ -7,10 +7,24 @@ This project uses Python, Bash, Docker, and Apache Kafka to create a POC for a r
 The project consists of a few different components:
 
 ### Flask App
-The file `flask_app.py` contains an API which can be used to publish events to the Kafka topic.
+The file `flask_app.py` contains a CRUD RESTful API which can be used to publish events to the Kafka topic.
 
 ### Producer and Consumer
-The three main pieces are the python files `create.py`, `delete.py`, and `update.py`. As their names suggest, `create.py` interacts with the flask app to create records in the postgres instance using sample data, `delete.py` deletes records from the postgres instance with a given arrest_id, and `update.py` updates records created by `create.py` with slightly altered sample data.
+The main components of the kafka ingestion process are the python files `create.py`, `delete.py`, `update.py`, `get_total_arrests.py`, `get_complaints_by_officer.py`, and `get_arrests_by_crime_type.py`.
+
+- Producer:
+    - `create.py`: Posts a request to the flask app to create records in the postgres instance based on the data found in `sample_records.sample_data.txt`.
+
+    - `update.py`: Posts a request to the flask app to create records in the postgres instance based on the edited data found in `sample_records.sample_data_edited.txt`. The records in this file are the same as those found in `sample_records.sample_data.txt`, except all timestamps are rolled back by one minute.
+
+    - `delete.py`: Sends a request to the flask app to delete records of a given officer_id. The file is currently configured to delete records with an officer_id matching those found in `sample_records.sample_data.txt`.
+
+- Aggregated Metrics:
+    - `get_total_arrests.py`: Sends a GET request to the flask app to get the total number of arrests found in the `arrests` table. 
+
+    - `get_complaints_by_officer.py`: Sends a GET request to the flask app to get a count of the total number of complaints per officer_id.
+
+    - `get_arrests_by_crime_type.py`: Sends a GET request to the flask app to get a count of the total number of arrests by crime type.
 
 ### SQL
 The `sql` directory contains a few relevant .sql files used by the producer and consumer, mainly for creating tables and inserting data when needed.
