@@ -13,18 +13,33 @@ conf = {
 
 producer = Producer(conf)
 
-@app.route('/arrests', methods=['POST'])
+@app.route('/arrests/create', methods=['POST'])
 def create_arrest():
     data = request.json['arrests']
 
     # Publish each arrest event to Kafka with the table_name field
-    topic = 'arrest'
+    topic = 'arrest-topic'
     for arrest_event in data:
         arrest_event['table_name'] = 'arrests'  # Include the table_name field
+        arrest_event['event_type'] = 'create'
         producer.produce(topic, key=str(arrest_event['id']), value=json.dumps(arrest_event))
         producer.flush()
 
-    return jsonify({"message": "Arrest events sent to Kafka topic successfully"}), 201
+    return jsonify({"message": "Arrest create event sent to Kafka topic successfully"}), 201
+
+@app.route('/arrests/delete', methods=['DELETE'])
+def delete_arrest():
+    data = request.json['arrests']
+
+    topic = 'arrest-topic'
+    for arrest_event in data:
+        arrest_event['event_type'] = 'delete'
+        arrest_event['table_name'] = 'arrests'
+        producer.produce(topic, key=str(arrest_event['id']), value=json.dumps(arrest_event))
+        producer.flush()
+
+    return jsonify({"message": f"Arrest event scheduled for deletion"}), 200
+
 
 @app.route('/officers', methods=['POST'])
 def create_officer():
@@ -34,7 +49,7 @@ def create_officer():
     data['table_name'] = 'officer'
 
     # Publish the officer data to Kafka
-    topic = 'officer'
+    topic = 'arrest-topic'
     producer.produce(topic, key=str(data['id']), value=json.dumps(data))
     producer.flush()
 
@@ -49,7 +64,7 @@ def create_complaint():
         complaint_event['table_name'] = 'complaint'
 
     # Publish each complaint event to Kafka
-    topic = 'complaint'
+    topic = 'arrest-topic'
     for complaint_event in data:
         producer.produce(topic, key=str(complaint_event['id']), value=json.dumps(complaint_event))
         producer.flush()

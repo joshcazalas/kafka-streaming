@@ -5,7 +5,7 @@ import json
 with open('sample_records/sample_data.json', 'r') as file:
         json_data = json.load(file)
 
-api_endpoint = 'arrests'
+api_endpoint = '/arrests/create'
 api_url = f'http://127.0.0.1:5000/{api_endpoint}'
 headers = {'Content-Type': 'application/json'}
 

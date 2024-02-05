@@ -1,6 +1,6 @@
 import time
 import json
-from helper_functions.process_json_and_insert import insert_into_table
+from helper_functions.insert import insert_into_table
 from helper_functions.create_dimension import create_dimension
 
 running = True
@@ -23,11 +23,23 @@ def consume_kafka_message(consumer, postgres_connection ,topics):
                     # Record start time
                     start_time = time.time()
 
-                    if 'table_name' in decoded_msg:
+                    event_type = table_data.get('event_type', 'unknown')
+
+                    # Check the event type and perform actions accordingly
+                    if event_type == 'create':
+                        print("Performing create operation...")
+                        if 'table_name' in decoded_msg:
+                            table_data = decoded_msg.copy()
+                            insert_into_table(postgres_connection, table_data)
+                        else:
+                            print(f"Missing 'table_name' in message: {decoded_msg}")
+                    elif event_type == 'delete':
+                        print("Performing delete operation...")
                         table_data = decoded_msg.copy()
-                        insert_into_table(postgres_connection, table_data)
+                        
+                        
                     else:
-                        print(f"Missing 'table_name' in message: {decoded_msg}")
+                        print(f"Unknown event type: {event_type}")
 
                     # Record end time
                     end_time = time.time()
